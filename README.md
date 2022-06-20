@@ -3,6 +3,7 @@
 ## To Run
 
 + `yarn install`
++ Add your own Mongo Atlas App ID to `App.tsx` > `const MONGO_ATLAS_APP_ID = 'ADD_YOUR_APP_ID_HERE'`
 + `yarn start`
 
 ## Expected user flow
