@@ -5,13 +5,21 @@ import {Credentials, SyncConfiguration} from 'realm';
 
 const RealmContext = createRealmContext({
 	schema: [],
+	// This line crashes the app with sync.
+	path: 'sync.realm',
 });
+
 const {RealmProvider} = RealmContext;
 
 const MONGO_ATLAS_APP_ID = 'ADD_YOUR_APP_ID_HERE'; // Change to your mongo atlas app id
 
 const styles = StyleSheet.create({
-	container: {flex: 1, justifyContent: 'center', alignItems: 'center'},
+	container: {
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+		backgroundColor: 'lightblue',
+	},
 });
 
 const AppComponent = () => {
